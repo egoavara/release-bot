@@ -1,0 +1,3 @@
+encryptionsalt: v1:zBHBE+hYYMQ=:v1:rwVkj3si/mFPjQEx:71dGVxnw1dHbdfv5Ux8t//N2g+SlvQ==
+config:
+  kubernetes:context: k3d-egoavara-net

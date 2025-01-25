@@ -1,0 +1,17 @@
+[package]
+name = "gql-github"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest={workspace=true}
+graphql_client={workspace=true}
+
+serde={workspace=true}
+serde_json={workspace=true}
+url={workspace=true}
+
+tokio={workspace=true}
+dotenvy={ version="0.15.7"}
+
+[dev-dependencies]

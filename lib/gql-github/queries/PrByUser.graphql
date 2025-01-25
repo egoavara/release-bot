@@ -1,0 +1,28 @@
+query PrByUser($username: String!, $first: Int!, $after: String) {
+  user(login: $username){
+    pullRequests(first:$first, after: $after, orderBy:{field:UPDATED_AT, direction:DESC}){
+      nodes{
+        title
+        body
+        labels(first:20){
+          nodes{
+            name
+            description
+          }
+          pageInfo{
+            hasNextPage
+          }
+        }
+        createdAt
+        updatedAt
+        url
+      }
+      pageInfo{
+        startCursor
+        endCursor
+        hasNextPage
+        hasPreviousPage
+      }
+    }
+  }
+}

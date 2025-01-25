@@ -1,0 +1,29 @@
+[package]
+name = "release-bot"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = {workspace=true}
+clap= {workspace=true}
+
+tokio= {workspace=true}
+
+tokenizers ={workspace=true}
+candle-core= {workspace=true}
+candle-datasets= {workspace=true}
+candle-nn= {workspace=true}
+candle-transformers= {workspace=true}
+hf-hub = {workspace=true}
+
+tracing = {workspace=true}
+tracing-chrome = {workspace=true}
+tracing-subscriber = {workspace=true}
+
+serde= {workspace=true}
+serde_json= {workspace=true}
+
+reqwest={workspace=true}
+
+oapi-jira={workspace=true}
+gql-github={workspace=true}
